@@ -8,7 +8,7 @@ const CustomNodeChart = () => {
     name: "Lao Lao",
     title: "general manager",
     children: [
-      { id: "n2", name: "Bo Miao", title: "department manager" },
+      { id: "n2", name: "Bo Miao", title: "department manager", history: "\r2010 Lead Engineer - Team B\r2008 Senior Engineer - Team A" },
       {
         id: "n3",
         name: "Su Miao",
@@ -37,7 +37,7 @@ const CustomNodeChart = () => {
     ]
   };
 
-  return <OrganizationChart datasource={ds} chartClass="myChart" NodeTemplate={MyNode}/>;
+  return <OrganizationChart datasource={ds} chartClass="myChart" NodeTemplate={MyNode} />;
 };
 
 export default CustomNodeChart;
