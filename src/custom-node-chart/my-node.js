@@ -8,7 +8,9 @@ const propTypes = {
 
 const MyNode = ({ nodeData }) => {
   const selectNode = () => {
-    alert("Hi All. I'm " + nodeData.name + ". I'm a " + nodeData.title + ".");
+    //TODO: create a fancy modal/table
+    if (nodeData.history)
+      alert("Employment History " + nodeData.history);
   };
 
   return (
